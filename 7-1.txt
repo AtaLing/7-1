@@ -1,0 +1,40 @@
+import java.util.Scanner;  
+public class Main {  
+      
+    public static void main(String[] args) {  
+        // TODO Auto-generated method stub
+    	Scanner in = new Scanner(System.in);
+    	int n = in.nextInt();
+    	//创建质数表
+    	boolean[] P = new boolean[100000];
+    	for( int i=2; i<P.length; i++ )
+    	{
+    		P[i] = true;
+    	}
+    	for( int i=2; i<P.length; i++ )
+    	{
+    		
+    	}
+    	int count = 0;
+    	for( boolean k : P )
+    	{
+    		if( k )
+    		{
+    			count++;
+    		}
+    	}
+    	int[] prime = new int[count];
+    	int j = 0;
+    	for( int i=2; i<P.length; i++ )
+    	{
+    		if( P[i] )
+    		{
+				prime[j++] = i;
+    		}
+    	}
+    	if( n>=2&&n<=100000 )
+    	{
+	    	
+    	}
+    }  
+}
