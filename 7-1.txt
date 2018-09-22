@@ -13,7 +13,13 @@ public class Main {
     	}
     	for( int i=2; i<P.length; i++ )
     	{
-    		
+    		if(P[i])
+    		{
+    			for( int k=2; i*k<P.length; k++ )
+    			{
+    				P[i*k] = false;
+    			}
+    		}
     	}
     	int count = 0;
     	for( boolean k : P )
